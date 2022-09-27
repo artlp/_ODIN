@@ -1,0 +1,71 @@
+/* this is some magical font-importing.  
+you'll learn about it later. */
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+
+body {
+  background: #eee;
+  font-family: Besley, serif;
+  margin: 0;
+}
+
+.header {
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+
+}
+
+.profile-image {
+  background: rebeccapurple;
+  border-radius: 50%;
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  height: 48px;
+  width: 48px;
+}
+
+.logo {
+  color: rebeccapurple;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 900;
+  margin: 16px 16px;
+}
+
+button {
+  background: rebeccapurple;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 8px 24px;
+}
+
+a {
+  color: rebeccapurple;
+  /* this removes the line under our links */
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+li {
+    /* margin: 16px 4px; */
+}
+.leftside, .rightside {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.rightside > * {
+    margin: 6px;
+}

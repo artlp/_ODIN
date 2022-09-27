@@ -1,0 +1,16 @@
+.pinkbg {
+    background-color:  rgb(255, 160, 176);
+    font-family: Verdana, "Deja Vu Sans", sans-serif;
+}
+
+#div2 {
+    color: rgb(42, 42, 255);
+    font-size: 36px;
+}
+.biggerfont {
+    font-size: 24px;
+}
+#div4 {
+    font-weight: bold;
+    background-color: rgb(27, 172, 61);
+}
