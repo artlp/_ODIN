@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h1>
+            THE TITLE OF YOUR WEBPAGE
+        </h1>
+        <div id="container">
+            <div class="content">
+                This is the glorious text-content!
+            </div>
+        </div>
+        <script>
+            const redP = document.createElement("p");
+            const contentDiv = document.querySelector(".content");
+            const h3Header = document.createElement("h3");
+            const h1 = document.querySelector("h1");
+            const container = document.querySelector('#container');
+            const innerDiv = document.createElement("div");
+            const innerh1 = document.createElement("h1");
+            const innerP = document.createElement("p");
+
+            innerDiv.style.cssText = "background-color: pink;border: 1px solid black;";
+            h3Header.innerText = "I’m a blue h3!";
+            redP.style.color = "red";
+            redP.innerText = "hello";
+            innerh1.innerText = "I’m in a div";
+            innerP.innerText = "ME TOO!";
+            h3Header.style.color = "blue";
+
+            contentDiv.appendChild(redP);
+            innerDiv.appendChild(innerh1);
+            innerDiv.appendChild(innerP);
+            contentDiv.appendChild(innerDiv);
+
+            document.body.insertBefore(h3Header, container)
+        </script>
+    </body>
+
+</html>
